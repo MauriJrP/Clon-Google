@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    height: 64px;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin: 0 18px;
+}
+.header__ul {
+    display: flex;
+    padding: 0;
+}
+.header__li {
+    display: flex;
+    list-style: none;
+    padding-left: 15px;
+    align-items: center;
+}
+.header__a {
+    text-decoration: none;
+    color: #000;
+}
+.header__photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 1000px;
+    object-fit: cover;
+    margin-right: 10px;
+}
