@@ -1,7 +1,20 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+li {
+    list-style: none;
+}
+/* ------------------------------------ */
 .header {
+    position: absolute;
     display: flex;
     justify-content: flex-end;
     height: 64px;
+    width: 100%;
 }
 .header__nav {
     display: flex;
@@ -14,13 +27,8 @@
 }
 .header__li {
     display: flex;
-    list-style: none;
     padding-left: 15px;
     align-items: center;
-}
-.header__a {
-    text-decoration: none;
-    color: #000;
 }
 .header__photo {
     width: 32px;
@@ -28,4 +36,79 @@
     border-radius: 1000px;
     object-fit: cover;
     margin-right: 10px;
+}
+/* ------------------------------------- */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    top: 0;
+}
+.container {
+    width: 100%;
+    display: inline-block;
+    justify-content: center!important;
+    text-align: center;
+    /* position: relative; */
+}
+.main__section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+.main__search {
+    width: 582px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+.main__input {
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+.main__buttons {
+    display: inline-block;
+}
+.main__button {
+    padding: 8px;
+    border: none;
+    margin: 4px;
+    opacity: .7;
+}
+.main a {
+    text-decoration: initial !important;
+    color: blue;
+}
+/* ------------------------------------ */
+.footer {
+    position: absolute;
+    bottom: 0;
+    background: #F2F2F2;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    /* height: 0px; */
+}
+.footer__country {
+    padding-left: 30px;
+    opacity: .7;
+}
+.footer__country p {
+    margin: 11px 0;
+}
+.footer__information {
+    opacity: .7;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__information-ul {
+    display: flex;
+    padding: 0 20px;
+    margin: 11px 0;
+}
+.footer__link {
+    padding: 0 10px;
 }
