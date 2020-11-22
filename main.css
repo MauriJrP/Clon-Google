@@ -104,6 +104,10 @@ li {
     border: none;
     margin: 4px;
     opacity: .8;
+    border-radius: 5px;
+}
+.main__button:hover {
+    border: 1px solid #c6c6c6;
 }
 .main a {
     text-decoration: initial !important;
